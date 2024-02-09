@@ -12,11 +12,11 @@ import hrm2Route from './routes/hrm2Route.js';
 import builtTechRoutes from './routes/builtTechRoutes.js';
 import collabRoute from './routes/collabRoute.js';
 import fashionBoxRoute from './routes/fashionBoxRoute.js';
-
+import cors  from 'cors';
 import fileUpload from 'express-fileupload';
 
 const app = express();
-
+app.use(cors());
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
