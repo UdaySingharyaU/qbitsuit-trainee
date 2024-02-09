@@ -35,7 +35,7 @@ app.use('/', builtTechRoutes);
 app.use(fileUpload({
     useTempFiles:true
 }))
-const PORT = 8000;
+const PORT = 3000;
 
 
 Connection();
